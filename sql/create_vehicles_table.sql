@@ -1,0 +1,42 @@
+USE uk_road_safety;
+
+DROP TABLE IF EXISTS vehicles_clean;
+
+CREATE TABLE vehicles_clean (
+`collision_index` TEXT,
+`collision_year` BIGINT,
+`collision_ref_no` TEXT,
+`vehicle_reference` BIGINT,
+`vehicle_type` BIGINT,
+`towing_and_articulation` BIGINT,
+`vehicle_manoeuvre_historic` BIGINT,
+`vehicle_manoeuvre` BIGINT,
+`vehicle_direction_from` BIGINT,
+`vehicle_direction_to` BIGINT,
+`vehicle_location_restricted_lane_historic` BIGINT,
+`vehicle_location_restricted_lane` BIGINT,
+`junction_location` BIGINT,
+`skidding_and_overturning` BIGINT,
+`hit_object_in_carriageway` BIGINT,
+`vehicle_leaving_carriageway` BIGINT,
+`hit_object_off_carriageway` BIGINT,
+`first_point_of_impact` BIGINT,
+`vehicle_left_hand_drive` BIGINT,
+`journey_purpose_of_driver_historic` BIGINT,
+`journey_purpose_of_driver` BIGINT,
+`sex_of_driver` BIGINT,
+`age_of_driver` BIGINT,
+`age_band_of_driver` BIGINT,
+`engine_capacity_cc` BIGINT,
+`propulsion_code` BIGINT,
+`age_of_vehicle` BIGINT,
+`generic_make_model` TEXT,
+`driver_imd_decile` BIGINT,
+`lsoa_of_driver` TEXT,
+`escooter_flag` BIGINT,
+`driver_distance_banding` BIGINT,
+`age_of_driver_clean` DOUBLE,
+`driver_age_group` TEXT,
+`driver_sex_label` TEXT,
+`vehicle_type_label` TEXT
+);
